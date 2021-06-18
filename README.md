@@ -1,4 +1,7 @@
-# Git.php
+# git-php
+
+`basteyy/git-php` is a fork of `kbjr/Git.php` from James Brumond. See the original github page: https://github.com/kbjr/Git.php
+
 
 ## Description
 
@@ -12,7 +15,7 @@ A system with [git](http://git-scm.com/) installed
 
 Use composer tp install the package:
 
-```
+```bash
 composer require basteyy/git-php
 ```
 

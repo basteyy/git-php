@@ -1,8 +1,11 @@
 {
-    "name": "kbjr/git.php",
+    "name": "basteyy/git-php",
     "autoload": {
         "psr-4": {
             "Kbjr\\Git\\": "src/"
         }
+    },
+    "require": {
+        "ext-mbstring": "*"
     }
 }

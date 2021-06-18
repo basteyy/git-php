@@ -13,7 +13,7 @@
  * @link       http://code.kbjrweb.com/project/gitphp
  */
 
-require __DIR__ . '/../vendor/autoload.php';
+require dirname(__DIR__). '/vendor/autoload.php';
 
 use Kbjr\Git\Git;
 use Kbjr\Git\GitRepo;
