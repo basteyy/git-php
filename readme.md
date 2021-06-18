@@ -11,7 +11,7 @@ A system with [git](http://git-scm.com/) installed
 ## Basic Use
 
 ```php
-require __DIR__ . '/../vendor/autoload.php';
+require dirname(__DIR__) . '/vendor/autoload.php';
 
 use Kbjr\Git\Git;
 
