@@ -8,6 +8,14 @@ A PHP git repository control library. Allows the running of any git command from
 
 A system with [git](http://git-scm.com/) installed
 
+## Install
+
+Use composer tp install the package:
+
+```
+composer require basteyy/git-php
+```
+
 ## Basic Use
 
 ```php
