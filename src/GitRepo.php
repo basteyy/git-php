@@ -514,11 +514,11 @@ class GitRepo
      * @return bool
      * @throws Exception
      */
-    public function push(string $remote,
-                         string $branch): bool
+    public function push(string $remote = null,
+                         string $branch = null): bool
     {
         //--tags removed since this was preventing branches from being pushed (only tags were)
-        return $this->run('push ' . $remote . ($branch ? ' ' . $branch : ''));
+        return $this->run('push' . ($remote ? ' ' . $remote:'')  . ($branch ? ' ' . $branch : ''));
     }
 
     /**
@@ -530,10 +530,10 @@ class GitRepo
      * @return bool
      * @throws Exception
      */
-    public function pull(string $remote,
+    public function pull(string $remote = null,
                          string $branch = null): bool
     {
-        return $this->run('pull ' . $remote . ($branch ? ' ' . $branch : ''));
+        return $this->run('pull' . ($remote ? ' ' . $remote:'')  . ($branch ? ' ' . $branch : ''));
     }
 
     /**
