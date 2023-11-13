@@ -1,3 +1,5 @@
-vendor
-composer.lock
-.idea
+vendor              # Composer dependencies
+composer.lock       # Composer lock file
+.idea               # PhpStorm IDE settings
+.ddev               # DDEV local development environment settings
+index.php           # Testing index.php file
