@@ -34,6 +34,17 @@ class Git
 	}
 
     /**
+	 * Constructor
+	 */
+    public function __construct() {
+		if (file_exists('/usr/bin/git')) {
+			self::$bin = '/usr/bin/git';
+		} else {
+			self::$bin = 'git';
+		}
+	}
+
+    /**
      * Gets `git` executable path
      * @return string
      */
